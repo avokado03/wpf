@@ -47,7 +47,7 @@ namespace WpfApplication2
 
         private void ThirdTaskBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            ShowWindow(new ThirdTask.ThirdTask());
         }
 
         private void ShowWindow(Window window) {

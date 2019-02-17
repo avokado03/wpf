@@ -1,0 +1,81 @@
+﻿<Window x:Class="WpfApplication2.ThirdTask.ThirdTask"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2.ThirdTask"
+        mc:Ignorable="d"
+        Title="ThirdTask" Height="511.5" Width="730.511">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Margin="0,0,5,0">
+            <Grid.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="third.jpg"/>
+            </Grid.Background>
+        </Grid>
+        <GridSplitter Grid.Column="1" ShowsPreview="False" Width="3" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="125"></ColumnDefinition>
+                <ColumnDefinition Width="254*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Target="{Binding ElementName=xValue}" Grid.Row="0">Введите х:</Label>
+            <TextBox x:Name="xValue" Grid.Row="0" Grid.Column="1">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource Yellow}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+
+            <Label Target="{Binding ElementName=aValue}" Grid.Row="1">Введите а:</Label>
+            <TextBox x:Name="aValue" Grid.Row="1" Grid.Column="1">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource Yellow}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+
+            <Label Target="{Binding ElementName=xnValue}" Grid.Row="2">В интервале от:</Label>
+            <TextBox x:Name="xnValue" Grid.Row="2" Grid.Column="1">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource Yellow}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+
+            <Label Target="{Binding ElementName=xmValue}" Grid.Row="3">До:</Label>
+            <TextBox x:Name="xmValue" Grid.Row="3" Grid.Column="1">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource Yellow}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+
+            <Label Target="{Binding ElementName=xbValue}" Grid.Row="4">С шагом:</Label>
+            <TextBox x:Name="xbValue" Grid.Row="4" Grid.Column="1">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource Yellow}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+            <Button Grid.Row="5" Grid.ColumnSpan="2">
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource Yellow}"/>
+                </Button.Background>
+                Результат
+            </Button>
+
+            <Label Grid.Row="7" Grid.ColumnSpan="2">тут будет grid c графиком</Label>
+        </Grid>
+    </Grid>
+</Window>
