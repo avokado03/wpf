@@ -32,7 +32,7 @@ namespace WpfApplication2
 
         private void SecondTaskBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            ShowWindow(new SecondTask.SecondTask());
         }
 
         private void FirstTaskBtn_Click(object sender, RoutedEventArgs e)

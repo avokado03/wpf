@@ -19,6 +19,9 @@
             <Setter Property="FontFamily" Value="Verdana"></Setter>
             <Setter Property="Foreground" Value="#FF292426"></Setter>
             <Setter Property="Cursor" Value="Hand"></Setter>
+            <Setter Property="BorderBrush" Value="{x:Null}"></Setter>
+            <Setter Property="BorderThickness" Value="0"></Setter>
+            <Setter Property="Focusable" Value="False"></Setter>
         </Style>
 
         <Style TargetType="Label">
