@@ -13,7 +13,7 @@
         <Color x:Key="TextColor">#FF292426</Color>
         
         
-        
+        <!--Тут лучше ничего не трогать-->
         <Style TargetType="Button">
             <Setter Property="FontSize" Value="19"></Setter>
             <Setter Property="FontFamily" Value="Verdana"></Setter>
@@ -30,10 +30,6 @@
             <Setter Property="FontSize" Value="14"></Setter>
             <Setter Property="FontFamily" Value="Verdana"></Setter>
             <Setter Property="Foreground" Value="#FF292426"></Setter>
-        </Style>
-
-        <Style TargetType="TextBlock">
-            
         </Style>
         
         <Style TargetType="TextBox">

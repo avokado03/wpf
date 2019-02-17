@@ -12,19 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WpfApplication2.ThirdTask
+namespace WpfApplication2.FourthTask
 {
     /// <summary>
-    /// Логика взаимодействия для ThirdTask.xaml
+    /// Логика взаимодействия для FourthTask.xaml
     /// </summary>
-    public partial class ThirdTask : Window
+    public partial class FourthTask : Window
     {
-        public ThirdTask()
+        public FourthTask()
         {
             InitializeComponent();
         }
 
-        private void SetGraphBtn_Click(object sender, RoutedEventArgs e)
+        private void GenerateBtn_Click(object sender, RoutedEventArgs e)
         {
 
         }

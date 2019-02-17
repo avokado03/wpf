@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2.ThirdTask"
         mc:Ignorable="d"
-        Title="ThirdTask" Height="511.5" Width="730.511">
+        Title="Третье задание" Height="511.5" Width="730.511">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="160"></ColumnDefinition>
@@ -68,7 +68,7 @@
                     <SolidColorBrush Color="{DynamicResource Yellow}"/>
                 </TextBox.BorderBrush>
             </TextBox>
-            <Button Grid.Row="5" Grid.ColumnSpan="2">
+            <Button x:Name="SetGraphBtn" Grid.Row="5" Grid.ColumnSpan="2" Click="SetGraphBtn_Click">
                 <Button.Background>
                     <SolidColorBrush Color="{DynamicResource Yellow}"/>
                 </Button.Background>

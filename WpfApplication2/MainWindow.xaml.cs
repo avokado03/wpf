@@ -42,7 +42,7 @@ namespace WpfApplication2
 
         private void FourthTaskBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            ShowWindow(new FourthTask.FourthTask());
         }
 
         private void ThirdTaskBtn_Click(object sender, RoutedEventArgs e)
