@@ -1,0 +1,44 @@
+﻿<Application x:Class="WpfApplication2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfApplication2"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <Color x:Key="Coral">#FFFC4628</Color>
+        <Color x:Key="DeepBlue">#FF066781</Color>
+        <Color x:Key="Yellow">#FFFFDD1C</Color>
+        <Color x:Key="LightBlue">#FF5FAAA7</Color>
+        <Color x:Key="Orange">#FFFF8422</Color>
+        <Color x:Key="TextColor">#FF292426</Color>
+        
+        
+        
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="19"></Setter>
+            <Setter Property="FontFamily" Value="Verdana"></Setter>
+            <Setter Property="Foreground" Value="#FF292426"></Setter>
+            <Setter Property="Cursor" Value="Hand"></Setter>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="FontFamily" Value="Verdana"></Setter>
+            <Setter Property="Foreground" Value="#FF292426"></Setter>
+        </Style>
+
+        <Style TargetType="TextBlock">
+            
+        </Style>
+        
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="5"></Setter>
+        </Style>
+
+        <Style TargetType="DataGrid">
+            
+        </Style>
+    </Application.Resources>
+</Application>

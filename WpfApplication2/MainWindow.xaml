@@ -1,0 +1,98 @@
+﻿<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="Курсовая работа " Height="350" Width="525" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource DeepBlue}"/>
+        </Grid.Background>
+        <Button x:Name="FirstTaskBtn" Background="#00D4D0C8" Margin="10,24,-10,-24" IsDefault="True" Click="FirstTaskBtn_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource DeepBlue}"/>
+            </Button.BorderBrush> Первое задание
+        </Button>
+        <Grid Margin="-35.28,-70.787,0,158.597" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="294">
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource Orange}"/>
+            </Grid.Background>
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-56.157"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Button x:Name="FifthTaskBtn" Margin="0,97.306,0,28.698" Click="FifthTaskBtn_Click">
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource Orange}"/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource Orange}"/>
+                </Button.Background>
+                Пятое задание
+            </Button>
+        </Grid>
+        <Grid Margin="-157.522,132.248,0,-7.741" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="384.383">
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource Coral}"/>
+            </Grid.Background>
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="51.276"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Button x:Name="SecondTaskBtn" Background="#00D4D0C8" VerticalAlignment="Top" Height="36.674" Margin="37.757,57.772,-37.757,0" BorderThickness="0" Click="SecondTaskBtn_Click">
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource Coral}"/>
+                </Button.BorderBrush> Второе задание
+            </Button>
+        </Grid>
+        <Grid Margin="102.416,-113.382,-108.664,0" RenderTransformOrigin="0.509,0.766" Height="224.127" VerticalAlignment="Top">
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource LightBlue}"/>
+            </Grid.Background>
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="37.357"/>
+                    <TranslateTransform X="-6.854" Y="0.154"/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Button x:Name="FourthTaskBtn" Height="74.424" VerticalAlignment="Bottom" Margin="39.541,0,22.217,0" Click="FourthTaskBtn_Click">
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource LightBlue}"/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource LightBlue}"/>
+                </Button.Background> Четвертое задание
+            </Button>
+        </Grid>
+        <Grid Margin="214.985,0,-187.3,-132.195" RenderTransformOrigin="0.5,0.5" Height="284.433" VerticalAlignment="Bottom">
+            <Grid.Background>
+                <SolidColorBrush Color="#FFFFDD1C"/>
+            </Grid.Background>
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-37.791"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Button x:Name="ThirdTaskBtn" Background="#00D4D0C8" Height="79.329" VerticalAlignment="Top" Margin="0,31.222,0,0" Click="ThirdTaskBtn_Click">
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource Yellow}"/>
+                </Button.BorderBrush> Третье задание
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
