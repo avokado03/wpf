@@ -20,7 +20,64 @@
         </Grid>
         <GridSplitter Grid.Column="1" ShowsPreview="False" Width="3" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
         <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="125"></ColumnDefinition>
+                <ColumnDefinition Width="254*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
             
+            <Label Target="{Binding ElementName=xValue}" Grid.Row="0">Введите х:</Label>
+            <TextBox x:Name="xValue" Grid.Row="0" Grid.Column="1">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource Coral}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+
+            <Label Target="{Binding ElementName=aValue}" Grid.Row="1">Введите а:</Label>
+            <TextBox x:Name="aValue" Grid.Row="1" Grid.Column="1">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource Coral}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+
+            <Label Target="{Binding ElementName=xnValue}" Grid.Row="2">В интервале от:</Label>
+            <TextBox x:Name="xnValue" Grid.Row="2" Grid.Column="1">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource Coral}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+
+            <Label Target="{Binding ElementName=xmValue}" Grid.Row="3">До:</Label>
+            <TextBox x:Name="xmValue" Grid.Row="3" Grid.Column="1">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource Coral}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+
+            <Label Target="{Binding ElementName=xbValue}" Grid.Row="4">С шагом:</Label>
+            <TextBox x:Name="xbValue" Grid.Row="4" Grid.Column="1" BorderBrush="#FFFC4628"></TextBox>
+            <Button Grid.Row="5" Grid.ColumnSpan="2">
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource Coral}"/>
+                </Button.Background>
+                Результат
+            </Button>
+
+            <Label Target="{Binding ElementName=result}" Grid.Row="6">Значение</Label>
+            <TextBox x:Name="result" Grid.Row="6" Grid.Column="1" BorderBrush="#FFFC4628"></TextBox>
+
+            <Label Target="{Binding ElementName=extremum}" Grid.Row="7">Экстремумы</Label>
+            <TextBox x:Name="extremum" Grid.Row="7" Grid.Column="1" BorderBrush="#FFFC4628"></TextBox>
         </Grid>
     </Grid>
 </Window>

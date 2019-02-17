@@ -29,8 +29,8 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="126"/>
-                <ColumnDefinition Width="323*"/>
+                <ColumnDefinition Width="125"/>
+                <ColumnDefinition Width="324*"/>
             </Grid.ColumnDefinitions>
             
             <Label Target="{Binding ElementName=xValue}" Grid.Row="1" Grid.Column="0" Content="Введите х:"/>
