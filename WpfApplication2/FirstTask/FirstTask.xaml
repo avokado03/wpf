@@ -33,14 +33,31 @@
                 <ColumnDefinition Width="323*"/>
             </Grid.ColumnDefinitions>
             
-            <Label Target="{Binding ElementName=xValue}" Grid.Row="0" Grid.Column="0" Content="Введите х:"/>
-            <TextBox x:Name="xValue" Grid.Row="0" Grid.Column="1">
+            <Label Target="{Binding ElementName=xValue}" Grid.Row="1" Grid.Column="0" Content="Введите х:"/>
+            <TextBox x:Name="xValue" Grid.Row="1" Grid.Column="1">
                 <TextBox.BorderBrush>
                     <SolidColorBrush Color="{DynamicResource DeepBlue}"/>
                 </TextBox.BorderBrush>
             </TextBox>
 
-            <Label></Label>
+            <Label Target="{Binding ElementName=aValue}" Grid.Row="2" Grid.Column="0">Введите а:</Label>
+            <TextBox x:Name="aValue" Grid.Row="2" Grid.Column="1">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource DeepBlue}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+
+            <Button x:Name="ResultBtn" Grid.Row="3" Grid.ColumnSpan="2" Click="ResultBtn_Click" Margin="5" >
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource DeepBlue}"/>
+                </Button.Background> Вычислить</Button>
+
+            <Label Target="{Binding ElementName=Result}" Grid.Row="4" Grid.Column="0">Результат</Label>
+            <TextBox x:Name="Result" Grid.Row="4" Grid.Column="1" IsEnabled="False">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource DeepBlue}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
         </Grid>
     </Grid>
 </Window>

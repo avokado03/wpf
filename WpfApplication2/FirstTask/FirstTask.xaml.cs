@@ -23,5 +23,10 @@ namespace WpfApplication2.FirstTask
         {
             InitializeComponent();
         }
+
+        private void ResultBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
