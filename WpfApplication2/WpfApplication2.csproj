@@ -54,6 +54,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="FifthTask\FifthTask.xaml.cs">
+      <DependentUpon>FifthTask.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FourthTask\FourthTask.xaml.cs">
       <DependentUpon>FourthTask.xaml</DependentUpon>
     </Compile>
@@ -63,6 +66,10 @@
     <Compile Include="ThirdTask\ThirdTask.xaml.cs">
       <DependentUpon>ThirdTask.xaml</DependentUpon>
     </Compile>
+    <Page Include="FifthTask\FifthTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FirstTask\FirstTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -123,7 +130,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="FifthTask\" />
+    <Resource Include="FifthTask\fifth.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="FirstTask\first.jpg" />

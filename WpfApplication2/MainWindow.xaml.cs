@@ -27,7 +27,7 @@ namespace WpfApplication2
 
         private void FifthTaskBtn_Click(object sender, RoutedEventArgs e)
         {
-            
+            ShowWindow(new FifthTask.FifthTask());
         }
 
         private void SecondTaskBtn_Click(object sender, RoutedEventArgs e)
