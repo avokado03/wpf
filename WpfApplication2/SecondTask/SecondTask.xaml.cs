@@ -26,7 +26,19 @@ namespace WpfApplication2.SecondTask
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            SecondTaskModel model = new SecondTaskModel();
+            try
+            {
+                model.xValue = Convert.ToDouble(xValue.Text);
+                model.aValue = Convert.ToDouble(aValue.Text);
+                model.Step = Convert.ToDouble(xbValue.Text);
+                result.Text = model.function.Invoke(model.xValue).ToString();
+                Extremus extr = new Extremus(model);
+                extremum.Text = extr.GetExstremus();
+            }
+            catch (Exception ex) {
+                MessageBox.Show("Ошибка! \n" + ex.Message + "\n Проверьте вводимые данные", "Exception", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

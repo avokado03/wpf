@@ -62,6 +62,7 @@
     <Compile Include="FourthTask\FourthTask.xaml.cs">
       <DependentUpon>FourthTask.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SecondTask\Extremus.cs" />
     <Compile Include="SecondTask\SecondTask.xaml.cs">
       <DependentUpon>SecondTask.xaml</DependentUpon>
     </Compile>
