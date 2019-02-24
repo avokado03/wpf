@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2.ThirdTask"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d"
         Title="Третье задание" Height="511.5" Width="730.511">
     <Grid>
@@ -20,8 +21,6 @@
         <GridSplitter Grid.Column="1" ShowsPreview="False" Width="3" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
         <Grid Grid.Column="2">
             <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
@@ -48,34 +47,21 @@
                 </TextBox.BorderBrush>
             </TextBox>
 
-            <Label Target="{Binding ElementName=xnValue}" Grid.Row="2">В интервале от:</Label>
-            <TextBox x:Name="xnValue" Grid.Row="2" Grid.Column="1">
+            <Label Target="{Binding ElementName=xbValue}" Grid.Row="2">С шагом:</Label>
+            <TextBox x:Name="xbValue" Grid.Row="2" Grid.Column="1">
                 <TextBox.BorderBrush>
                     <SolidColorBrush Color="{DynamicResource Yellow}"/>
                 </TextBox.BorderBrush>
             </TextBox>
-
-            <Label Target="{Binding ElementName=xmValue}" Grid.Row="3">До:</Label>
-            <TextBox x:Name="xmValue" Grid.Row="3" Grid.Column="1">
-                <TextBox.BorderBrush>
-                    <SolidColorBrush Color="{DynamicResource Yellow}"/>
-                </TextBox.BorderBrush>
-            </TextBox>
-
-            <Label Target="{Binding ElementName=xbValue}" Grid.Row="4">С шагом:</Label>
-            <TextBox x:Name="xbValue" Grid.Row="4" Grid.Column="1">
-                <TextBox.BorderBrush>
-                    <SolidColorBrush Color="{DynamicResource Yellow}"/>
-                </TextBox.BorderBrush>
-            </TextBox>
-            <Button x:Name="SetGraphBtn" Grid.Row="5" Grid.ColumnSpan="2" Click="SetGraphBtn_Click">
+            <Button x:Name="SetGraphBtn" Grid.Row="3" Grid.ColumnSpan="2" Click="SetGraphBtn_Click">
                 <Button.Background>
                     <SolidColorBrush Color="{DynamicResource Yellow}"/>
                 </Button.Background>
                 Результат
             </Button>
-
-            <Label Grid.Row="7" Grid.ColumnSpan="2">тут будет grid c графиком</Label>
+            <Grid Grid.Row="4" Grid.RowSpan="3" Grid.ColumnSpan="2" Background="White">
+                <lvc:CartesianChart Series="{Binding SeriesCollection}" Margin="5"></lvc:CartesianChart>
+            </Grid>
         </Grid>
     </Grid>
 </Window>

@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using LiveCharts;
+using LiveCharts.Defaults;
+using LiveCharts.Wpf;
 
 namespace WpfApplication2.ThirdTask
 {
@@ -19,6 +22,8 @@ namespace WpfApplication2.ThirdTask
     /// </summary>
     public partial class ThirdTask : Window
     {
+        public SeriesCollection SeriesCollection { get; set; }
+
         public ThirdTask()
         {
             InitializeComponent();
@@ -26,7 +31,33 @@ namespace WpfApplication2.ThirdTask
 
         private void SetGraphBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            DataContext = null;
+            ThirdTaskModel model = new ThirdTaskModel();
+            double x,a,step;
+            try
+            {
+                x = Convert.ToDouble(xValue.Text);
+                a = Convert.ToDouble(aValue.Text);
+                step = Convert.ToDouble(xbValue.Text);
+                if (x >= a)
+                    throw new Exception("Указан неверный промежуток, х<a");
+                model.aValue = a;
+                model.xValue = x;
+                model.Step = step;
+                var points = model.GetPoints();
+                SeriesCollection = new SeriesCollection
+                  {
+                      new LineSeries
+                      {
+                          Title = "Грaфик функции",
+                          Values = points
+                      }
+                  };
+                DataContext = this;
+            }
+            catch (Exception ex) {
+                MessageBox.Show("Ошибка! \n"+ex.Message, "Exception", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }
