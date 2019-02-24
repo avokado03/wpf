@@ -58,6 +58,7 @@
     <Compile Include="FifthTask\FifthTask.xaml.cs">
       <DependentUpon>FifthTask.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FirstTask\FirstTaskModel.cs" />
     <Compile Include="FourthTask\FourthTask.xaml.cs">
       <DependentUpon>FourthTask.xaml</DependentUpon>
     </Compile>

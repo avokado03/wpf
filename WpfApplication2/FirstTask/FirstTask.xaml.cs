@@ -26,7 +26,16 @@ namespace WpfApplication2.FirstTask
 
         private void ResultBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            FirstTaskModel valueObject = new FirstTaskModel();
+            try
+            {
+                valueObject.xValue = Convert.ToDouble(xValue.Text);
+                valueObject.aValue = Convert.ToDouble(aValue.Text);
+                Result.Text = valueObject.function.Invoke().ToString();
+            }
+            catch (Exception ex) {
+                MessageBox.Show("Ошибка! \n"+ex.Message+"\n Проверьте вводимые данные", "Exception",MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }
