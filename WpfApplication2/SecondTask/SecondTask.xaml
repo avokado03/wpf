@@ -27,9 +27,6 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="125"></ColumnDefinition>
@@ -50,34 +47,20 @@
                 </TextBox.BorderBrush>
             </TextBox>
 
-            <Label Target="{Binding ElementName=xnValue}" Grid.Row="2">В интервале от:</Label>
-            <TextBox x:Name="xnValue" Grid.Row="2" Grid.Column="1">
-                <TextBox.BorderBrush>
-                    <SolidColorBrush Color="{DynamicResource Coral}"/>
-                </TextBox.BorderBrush>
-            </TextBox>
-
-            <Label Target="{Binding ElementName=xmValue}" Grid.Row="3">До:</Label>
-            <TextBox x:Name="xmValue" Grid.Row="3" Grid.Column="1">
-                <TextBox.BorderBrush>
-                    <SolidColorBrush Color="{DynamicResource Coral}"/>
-                </TextBox.BorderBrush>
-            </TextBox>
-
-            <Label Target="{Binding ElementName=xbValue}" Grid.Row="4">С шагом:</Label>
-            <TextBox x:Name="xbValue" Grid.Row="4" Grid.Column="1" BorderBrush="#FFFC4628"></TextBox>
-            <Button Grid.Row="5" Grid.ColumnSpan="2">
+            <Label Target="{Binding ElementName=xbValue}" Grid.Row="2">С шагом:</Label>
+            <TextBox x:Name="xbValue" Grid.Row="2" Grid.Column="1" BorderBrush="#FFFC4628"></TextBox>
+            <Button Grid.Row="3" Grid.ColumnSpan="2" Click="Button_Click">
                 <Button.Background>
                     <SolidColorBrush Color="{DynamicResource Coral}"/>
                 </Button.Background>
                 Результат
             </Button>
 
-            <Label Target="{Binding ElementName=result}" Grid.Row="6">Значение</Label>
-            <TextBox x:Name="result" Grid.Row="6" Grid.Column="1" BorderBrush="#FFFC4628"></TextBox>
+            <Label Target="{Binding ElementName=result}" Grid.Row="4">Значение</Label>
+            <TextBox x:Name="result" Grid.Row="4" Grid.Column="1" BorderBrush="#FFFC4628"></TextBox>
 
-            <Label Target="{Binding ElementName=extremum}" Grid.Row="7">Экстремумы</Label>
-            <TextBox x:Name="extremum" Grid.Row="7" Grid.Column="1" BorderBrush="#FFFC4628"></TextBox>
+            <Label Target="{Binding ElementName=extremum}" Grid.Row="5">Экстремумы</Label>
+            <TextBox x:Name="extremum" Grid.Row="5" Grid.Column="1" BorderBrush="#FFFC4628"></TextBox>
         </Grid>
     </Grid>
 </Window>
