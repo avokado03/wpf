@@ -54,5 +54,15 @@ namespace WpfApplication2
             window.Owner = this;
             window.Show();
         }
+
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void RefBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
