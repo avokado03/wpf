@@ -8,7 +8,11 @@
         mc:Ignorable="d"
         Title="Курсовая работа " Height="572" Width="903" ResizeMode="NoResize" Background="{x:Null}" AllowsTransparency="True" WindowStyle="None">
     <Grid Background="Transparent">
-        <Button x:Name="FirstBtn" Click="FirstTaskBtn_Click" Margin="403.327,103.895,15.995,282.44" Content="Первое задание" RenderTransformOrigin="0.5,0.5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="17*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="FirstBtn" Click="FirstTaskBtn_Click" Margin="403.327,0,15.995,-91.56" Content="Первое задание" RenderTransformOrigin="0.5,0.5" Height="185.665" VerticalAlignment="Bottom">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -24,7 +28,7 @@
                 <SolidColorBrush Color="{DynamicResource DeepBlue}"/>
             </Button.Background>
         </Button>
-        <Button x:Name='FourthBtn' Click="FourthTaskBtn_Click" Margin="126,87.237,360.5,194.263" Content="Четвертое задание    &#xD;&#xA;">
+        <Button x:Name='FourthBtn' Click="FourthTaskBtn_Click" Margin="126,-110.763,360.5,0" Content="Четвертое задание    &#xD;&#xA;" Height="290.5" Grid.Row="1" VerticalAlignment="Top">
             <Button.BorderBrush>
                 <SolidColorBrush Color="{DynamicResource LightBlue}"/>
             </Button.BorderBrush>
@@ -32,7 +36,7 @@
                 <SolidColorBrush Color="{DynamicResource LightBlue}"/>
             </Button.Background>
         </Button>
-        <Button x:Name="SecondBtn" Margin="412.5,252,0,81" Click="SecondTaskBtn_Click" Content="Второе задание">
+        <Button x:Name="SecondBtn" Margin="412.5,54,0,81" Click="SecondTaskBtn_Click" Content="Второе задание" Grid.Row="1">
             <Button.BorderBrush>
                 <SolidColorBrush Color="{DynamicResource Coral}"/>
             </Button.BorderBrush>
@@ -40,7 +44,7 @@
                 <SolidColorBrush Color="{DynamicResource Coral}"/>
             </Button.Background>
         </Button>
-        <Button x:Name="FifthBtn" Click="FifthTaskBtn_Click" Margin="36.153,0,0,95.757" Content="Пятое задание" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Height="167.375" VerticalAlignment="Bottom" Width="322.093">
+        <Button x:Name="FifthBtn" Click="FifthTaskBtn_Click" Margin="36.153,110.868,0,95.757" Content="Пятое задание" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="322.093" Grid.Row="1">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -56,7 +60,7 @@
                 <SolidColorBrush Color="{DynamicResource Orange}"/>
             </Button.BorderBrush>
         </Button>
-        <Button x:Name="ThirdBtn" Click="ThirdTaskBtn_Click" Height="158.75" VerticalAlignment="Bottom" Content="Третье задание&#xD;&#xA;" Margin="285,0,340,35.513">
+        <Button x:Name="ThirdBtn" Click="ThirdTaskBtn_Click" Content="Третье задание&#xD;&#xA;" Margin="285,179.737,340,35.513" Grid.Row="1">
             <Button.BorderBrush>
                 <SolidColorBrush Color="{DynamicResource Yellow}"/>
             </Button.BorderBrush>
@@ -69,7 +73,7 @@
                 <ImageBrush ImageSource="close.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="RefBtn" Click="RefBtn_Click" Margin="26.5,103,0,0" HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="45">
+        <Button x:Name="RefBtn" Click="RefBtn_Click" Margin="26.5,0,0,48" HorizontalAlignment="Left" Height="47" VerticalAlignment="Bottom" Width="45">
             <Button.Background>
                 <ImageBrush ImageSource="information_icon-icons.com_52388.png"/>
             </Button.Background>

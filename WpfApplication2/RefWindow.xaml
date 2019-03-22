@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApplication2.RefWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="Справка" Height="121" Width="350">
+    <Grid Margin="0,0,2,9">
+        <TextBlock Margin="7,10,0,0" HorizontalAlignment="Left" Width="333">
+            <Run Text="Программное решение реализовано Ганиным А.К., 3При,"/>
+            <LineBreak/>
+            <Run Text="в качестве курсовой работы."/>
+            <Run Text="Тема данной курсовой работы -"></Run> 
+            <LineBreak/>
+            <Run Text="- практическая реализация типовых задач в среде Visual Studio"></Run>
+        </TextBlock>
+        <Label HorizontalAlignment="Left" Margin="7,55.493,0,0" VerticalAlignment="Top">© 2019г.</Label>
+    </Grid>
+</Window>

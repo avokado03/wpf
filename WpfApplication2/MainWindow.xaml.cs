@@ -62,7 +62,7 @@ namespace WpfApplication2
 
         private void RefBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            ShowWindow(new RefWindow());
         }
     }
 }
