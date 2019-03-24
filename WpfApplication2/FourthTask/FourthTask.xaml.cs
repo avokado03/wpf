@@ -19,6 +19,7 @@ namespace WpfApplication2.FourthTask
     /// </summary>
     public partial class FourthTask : Window
     {
+        private FourthTaskModel model;
         public FourthTask()
         {
             InitializeComponent();
@@ -26,7 +27,20 @@ namespace WpfApplication2.FourthTask
 
         private void GenerateBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            int size;
+            try
+            {
+                size = Convert.ToInt32(arraySize.Text);
+                model = new FourthTaskModel(size);
+                model.Fill();
+                array.Text = model.ArrToString();
+                minMaxAverage.Text = model.GetAvgFromMinAndMax();
+                minAbs.Text = model.GetMinFromAbs();
+                intervalSum.Text = model.GetSum();
+            }
+            catch (Exception ex) {
+                MessageBox.Show("Ошибка! \n" + ex.Message + "\n Проверьте вводимые данные", "Exception", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

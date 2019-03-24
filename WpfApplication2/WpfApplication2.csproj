@@ -78,6 +78,7 @@
     <Compile Include="FourthTask\FourthTask.xaml.cs">
       <DependentUpon>FourthTask.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FourthTask\FourthTaskModel.cs" />
     <Compile Include="RefWindow.xaml.cs">
       <DependentUpon>RefWindow.xaml</DependentUpon>
     </Compile>

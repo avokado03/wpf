@@ -59,7 +59,7 @@
                 </TextBox.BorderBrush>
             </TextBox>
 
-            <Label Target="{Binding ElementName=minAbs}" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Stretch" Margin="0,10.352" VerticalAlignment="Stretch" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin">Модуль минимального:</Label>
+            <Label Target="{Binding ElementName=minAbs}" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" Margin="0,10.352" VerticalAlignment="Stretch" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" Content="Мин. по модулю:&#xD;&#xA;"/>
             <TextBox x:Name="minAbs" Grid.Row="4" Grid.Column="1" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" IsEnabled="False">
                 <TextBox.BorderBrush>
                     <SolidColorBrush Color="{DynamicResource LightBlue}"/>
