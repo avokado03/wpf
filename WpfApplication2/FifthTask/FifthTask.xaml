@@ -46,7 +46,7 @@
                 </TextBox.BorderBrush>
             </TextBox>
 
-            <Button x:Name="GenerateBtn" Grid.Row="2" Grid.ColumnSpan="2" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin">
+            <Button x:Name="GenerateBtn" Grid.Row="2" Grid.ColumnSpan="2" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" Click="GenerateBtn_Click">
                 <Button.Background>
                     <SolidColorBrush Color="{DynamicResource Orange}"/>
                 </Button.Background>
@@ -54,7 +54,7 @@
                     <SolidColorBrush Color="{DynamicResource Orange}"/>
                 </Button.BorderBrush> Сгенерировать матрицу и расчитать значения
             </Button>
-            <DataGrid Grid.Row="3" Grid.ColumnSpan="2" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+            <UniformGrid x:Name="list" Margin="10,5,10,10" Grid.Row="3" Grid.ColumnSpan="2"/>
 
             <Label Target="{Binding ElementName=multiplyOdd}" Grid.Row="4" Grid.Column="0">Произведение нечетных:</Label>
             <TextBox x:Name="multiplyOdd" Grid.Row="4" Grid.Column="1" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin">

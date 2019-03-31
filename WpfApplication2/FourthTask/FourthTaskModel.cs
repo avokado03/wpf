@@ -56,14 +56,18 @@ namespace WpfApplication2.FourthTask
         }
 
         public string GetSum() {
-            if (ArrSize >= 10)
+            bool hasInPeriod = false; 
+            int sum = 0;
+            foreach (int i in Array)
             {
-               int sum = 0;
-               for (int i = 0; i <= 10; i++)
-                    sum += Array[i];
-                return sum.ToString();
+                if (i >= 0 && i <= 10)
+                {
+                    sum += i;
+                    hasInPeriod = true;
+                }
             }
-            return "Длина массива меньше 10";
+            return (!hasInPeriod) ? "Нет чисел от 0 до 10"
+                                  :  sum.ToString();
         }
     }
 }
