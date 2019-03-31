@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
-        Title="Справка" Height="121" Width="350">
-    <Grid Margin="0,0,2,9">
-        <TextBlock Margin="7,10,0,0" HorizontalAlignment="Left" Width="333">
+        Title="Справка" Height="128" Width="486" Icon="information_icon-icons.com_52388.png">
+    <Grid Margin="0,0,2,3">
+        <TextBlock Margin="10,10,0,42.507" HorizontalAlignment="Left" Width="409">
             <Run Text="Программное решение реализовано Ганиным А.К., 3При,"/>
             <LineBreak/>
             <Run Text="в качестве курсовой работы."/>
@@ -15,6 +15,6 @@
             <LineBreak/>
             <Run Text="- практическая реализация типовых задач в среде Visual Studio"></Run>
         </TextBlock>
-        <Label HorizontalAlignment="Left" Margin="7,55.493,0,0" VerticalAlignment="Top">© 2019г.</Label>
+        <Label HorizontalAlignment="Left" Margin="7,55.493,0,15.493" VerticalAlignment="Stretch" d:LayoutOverrides="Height">© 2019г.</Label>
     </Grid>
 </Window>
