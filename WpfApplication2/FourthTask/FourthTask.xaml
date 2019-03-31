@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2.FourthTask"
         mc:Ignorable="d"
-        Title="Четвертое задание" Height="361.017" Width="789.734">
+        Title="Четвертое задание" Height="361.017" Width="789.734" Icon="leaf-nature-forest-brand-plant_icon-icons.com_59259.png">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="160"></ColumnDefinition>

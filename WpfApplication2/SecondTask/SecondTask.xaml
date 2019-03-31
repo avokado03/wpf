@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2.SecondTask"
         mc:Ignorable="d"
-        Title="Второе задание" Height="322.472" Width="549.552" Background="White">
+        Title="Второе задание" Height="322.472" Width="549.552" Background="White" Icon="Leaf_circle__icon-icons.com_60483.png">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="160"></ColumnDefinition>

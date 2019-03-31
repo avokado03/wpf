@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApplication2.FirstTask"
         xmlns:WpfApplication2="clr-namespace:WpfApplication2" x:Class="WpfApplication2.FirstTask.FirstTask"
         mc:Ignorable="d"
-        Title="Первое задание" Height="322.472" Width="549.552" Background="White">
+        Title="Первое задание" Height="322.472" Width="549.552" Background="White" Icon="25_cherry_christmas_xmas_mistletoe__leaf_wreath_decoration_icon-icons.com_77060.png">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="160"/>

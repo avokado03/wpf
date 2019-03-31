@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2.FifthTask"
-        mc:Ignorable="d" Title="Пятое задание" Height="412.462" Width="821.022">
+        mc:Ignorable="d" Title="Пятое задание" Height="412.462" Width="821.022" Icon="22339fallenleaf_98739.png">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="160"></ColumnDefinition>

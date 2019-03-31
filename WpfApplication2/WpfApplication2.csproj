@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>tropicalleaf_102844.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DataGrid2DLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -188,6 +191,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="information_icon-icons.com_52388.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tropicalleaf_102844.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FourthTask\leaf-nature-forest-brand-plant_icon-icons.com_59259.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FifthTask\22339fallenleaf_98739.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FirstTask\25_cherry_christmas_xmas_mistletoe__leaf_wreath_decoration_icon-icons.com_77060.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SecondTask\Leaf_circle__icon-icons.com_60483.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ThirdTask\leaf_112181.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
