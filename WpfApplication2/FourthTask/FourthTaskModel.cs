@@ -49,9 +49,12 @@ namespace WpfApplication2.FourthTask
         }
 
         public string GetMinFromAbs() {
-            int min = Array.First();
+            int min = Math.Abs(Array.First());
             foreach (int i in Array)
-                if (Math.Abs(i) < min) min = i;
+            {
+                int itemAbs = Math.Abs(i);
+                if (itemAbs < min) min = itemAbs;
+            }
             return min.ToString();
         }
 

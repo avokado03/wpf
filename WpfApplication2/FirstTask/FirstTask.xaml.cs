@@ -31,7 +31,7 @@ namespace WpfApplication2.FirstTask
             {
                 valueObject.xValue = Convert.ToDouble(xValue.Text);
                 valueObject.aValue = Convert.ToDouble(aValue.Text);
-                Result.Text = valueObject.function.Invoke().ToString();
+                Result.Text = Math.Round(valueObject.function.Invoke(),3).ToString();
             }
             catch (Exception ex) {
                 MessageBox.Show("Ошибка! \n"+ex.Message+"\n Проверьте вводимые данные", "Exception",MessageBoxButton.OK, MessageBoxImage.Error);
