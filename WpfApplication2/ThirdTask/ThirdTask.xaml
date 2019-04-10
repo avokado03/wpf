@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApplication2.ThirdTask"
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d"
-        Title="Третье задание" Height="511.5" Width="730.511" Icon="leaf_112181.png">
+        Title="Третье задание" Height="621.5" Width="908.511" Icon="leaf_112181.png">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="160"></ColumnDefinition>
@@ -21,6 +21,9 @@
         <GridSplitter Grid.Column="1" ShowsPreview="False" Width="3" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
         <Grid Grid.Column="2">
             <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
@@ -53,13 +56,29 @@
                     <SolidColorBrush Color="{DynamicResource Yellow}"/>
                 </TextBox.BorderBrush>
             </TextBox>
-            <Button x:Name="SetGraphBtn" Grid.Row="3" Grid.ColumnSpan="2" Click="SetGraphBtn_Click">
+
+            <Label Target="{Binding ElementName=xnValue}" Grid.Row="3">От:</Label>
+            <TextBox x:Name="xnValue" Grid.Row="3" Grid.Column="1">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource Yellow}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+
+            <Label Target="{Binding ElementName=xhValue}" Grid.Row="4">До:</Label>
+            <TextBox x:Name="xhValue" Grid.Row="4" Grid.Column="1">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource Yellow}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+
+            <Button x:Name="SetGraphBtn" Grid.Row="5" Grid.ColumnSpan="2" Click="SetGraphBtn_Click">
                 <Button.Background>
                     <SolidColorBrush Color="{DynamicResource Yellow}"/>
                 </Button.Background>
                 Результат
             </Button>
-            <Grid Grid.Row="4" Grid.RowSpan="3" Grid.ColumnSpan="2" Background="White">
+
+            <Grid Grid.Row="6" Grid.RowSpan="5" Grid.ColumnSpan="2" Background="White">
                 <lvc:CartesianChart Series="{Binding SeriesCollection}" Margin="5"></lvc:CartesianChart>
             </Grid>
         </Grid>

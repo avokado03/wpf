@@ -4,13 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using LiveCharts;
 using LiveCharts.Defaults;
 using LiveCharts.Wpf;
@@ -33,23 +26,21 @@ namespace WpfApplication2.ThirdTask
         {
             DataContext = null;
             ThirdTaskModel model = new ThirdTaskModel();
-            double x,a,step;
             try
             {
-                x = Convert.ToDouble(xValue.Text);
-                a = Convert.ToDouble(aValue.Text);
-                step = Convert.ToDouble(xbValue.Text);
-                if (x >= a)
-                    throw new Exception("Указан неверный промежуток, х<a");
-                model.aValue = a;
-                model.xValue = x;
-                model.Step = step;
+                model.aValue = Convert.ToDouble(xValue.Text);
+                model.xValue = Convert.ToDouble(aValue.Text);
+                model.Step = Convert.ToDouble(xbValue.Text);
+                model.Start = Convert.ToDouble(xnValue.Text);
+                model.End = Convert.ToDouble(xhValue.Text);
+                if (model.Start >= model.End)
+                    throw new Exception("Указан неверный промежуток");
                 var points = model.GetPoints();
                 SeriesCollection = new SeriesCollection
                   {
                       new LineSeries
                       {
-                          Title = "Грaфик функции",
+                          Title = "Y=",
                           Values = points
                       }
                   };
