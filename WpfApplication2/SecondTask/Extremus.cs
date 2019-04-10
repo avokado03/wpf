@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -49,8 +50,8 @@ namespace WpfApplication2.SecondTask
         }
 
         public string GetExstremus() {
-            double a = model.xValue;
-            double b = model.aValue;
+            double a = model.Start;
+            double b = model.End;
             return "Max = "+GetMax(a,b)+", min = "+GetMin(a,b);
         }
     }

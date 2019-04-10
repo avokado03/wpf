@@ -11,6 +11,8 @@ namespace WpfApplication2.SecondTask
         public double xValue { get; set; }
         public double aValue { get; set; }
         public double Step { get; set; }
+        public double Start { get; set; }
+        public double End { get; set; }
         public Func<double,double> function
         {
             get

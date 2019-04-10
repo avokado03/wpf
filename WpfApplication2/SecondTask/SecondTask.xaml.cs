@@ -32,6 +32,8 @@ namespace WpfApplication2.SecondTask
                 model.xValue = Convert.ToDouble(xValue.Text);
                 model.aValue = Convert.ToDouble(aValue.Text);
                 model.Step = Convert.ToDouble(xbValue.Text);
+                model.Start = Convert.ToDouble(xnValue.Text);
+                model.End = Convert.ToDouble(xhValue.Text);
                 result.Text = model.function.Invoke(model.xValue).ToString();
                 Extremus extr = new Extremus(model);
                 extremum.Text = extr.GetExstremus();
